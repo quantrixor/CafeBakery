@@ -1,0 +1,38 @@
+﻿<Window x:Class="CafeBakery.Views.Windows.MenuManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeBakery.Views.Windows"
+        
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Title="Управление данными меню" Height="400" Width="450">
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Название блюда:" Margin="10"/>
+        <TextBox Name="txtDishName" Margin="10" Grid.Row="1"/>
+
+        <TextBlock Text="Стоимость:" Margin="10" Grid.Row="2"/>
+        <xctk:MaskedTextBox Name="txtCost" Mask="00000.00" Margin="10" Grid.Row="3"/>
+
+
+        <TextBlock Text="Время приготовления:" Margin="10" Grid.Row="4"/>
+        <xctk:MaskedTextBox Name="txtPreparationTime" Mask="00:00:00" Margin="10" Grid.Row="5"/>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="6" Margin="10">
+            <Button Content="Сохранить" Width="100" Margin="5" Click="btnSave_Click"/>
+            <Button Content="Отмена" Width="100" Margin="5" Click="btnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
