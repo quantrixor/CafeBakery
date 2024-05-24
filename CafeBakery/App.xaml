@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:CafeBakery"
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+
              
              StartupUri="MainWindow.xaml">
     <Application.Resources>
@@ -51,6 +52,7 @@
             </Setter>
         </Style>
 
+        <!-- Style for MaskedTextBox -->
         <Style TargetType="xctk:MaskedTextBox">
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="FontFamily" Value="Dubai Medium"/>
@@ -69,6 +71,31 @@
                                 BorderThickness="{TemplateBinding BorderThickness}" 
                                 CornerRadius="10">
                             <ScrollViewer x:Name="PART_ContentHost" Margin="0" Padding="{TemplateBinding Padding}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for DateTimePicker -->
+        <Style TargetType="xctk:DateTimePicker">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Dubai Medium"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="xctk:DateTimePicker">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>

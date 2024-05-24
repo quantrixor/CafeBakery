@@ -73,6 +73,7 @@
     <Compile Include="Model\DatabaseConfig.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\Menu.cs" />
+    <Compile Include="Model\Order.cs" />
     <Compile Include="Model\Position.cs" />
     <Compile Include="Views\Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -86,11 +87,17 @@
     <Compile Include="Views\Pages\MenuListPage.xaml.cs">
       <DependentUpon>MenuListPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\OrdersListPage.xaml.cs">
+      <DependentUpon>OrdersListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\ManageEmployeesWindow.xaml.cs">
       <DependentUpon>ManageEmployeesWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\MenuManagementWindow.xaml.cs">
       <DependentUpon>MenuManagementWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\OrderManagementWindow.xaml.cs">
+      <DependentUpon>OrderManagementWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -120,6 +127,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\OrdersListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\Windows\ManageEmployeesWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +138,10 @@
     <Page Include="Views\Windows\MenuManagementWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\OrderManagementWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

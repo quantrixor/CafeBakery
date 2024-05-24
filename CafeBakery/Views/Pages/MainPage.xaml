@@ -12,6 +12,7 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Content="Сотрудники" Click="Employees_Click"/>
             <Button Content="Меню" Margin="0,5" Click="Menu_Click"/>
+            <Button Content="Заказы" Click="Orders_Click"/>
         </StackPanel>
     </Grid>
 </Page>
