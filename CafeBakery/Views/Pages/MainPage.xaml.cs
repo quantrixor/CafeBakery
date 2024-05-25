@@ -39,5 +39,10 @@ namespace CafeBakery.Views.Pages
         {
             NavigationService.Navigate(new OrdersListPage());
         }
+
+        private void Inventory_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new InventoryListPage());
+        }
     }
 }

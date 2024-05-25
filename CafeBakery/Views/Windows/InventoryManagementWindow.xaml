@@ -1,0 +1,47 @@
+﻿<Window x:Class="CafeBakery.Views.Windows.InventoryManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Title="Управление Ингредиентом" FontSize="15" Height="670" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Название ингредиента:" Margin="10" Grid.Row="0"/>
+        <TextBox Name="txtIngredientName" Margin="10" Grid.Row="1"/>
+
+        <TextBlock Text="Дата производства:" Margin="10" Grid.Row="2"/>
+        <DatePicker Name="dtpProductionDate" Margin="10" Grid.Row="3"/>
+
+        <TextBlock Text="Объем:" Margin="10" Grid.Row="4"/>
+        <xctk:MaskedTextBox Name="txtVolume" Mask="000.00" Margin="10" Grid.Row="5"/>
+
+        <TextBlock Text="Срок годности:" Margin="10" Grid.Row="6"/>
+        <DatePicker Name="dtpExpiryDate" Margin="10" Grid.Row="7"/>
+
+        <TextBlock Text="Стоимость:" Margin="10" Grid.Row="8"/>
+        <xctk:MaskedTextBox Name="txtCost" Mask="00000.00" Margin="10" Grid.Row="9"/>
+
+        <TextBlock Text="Поставщик:" Margin="10" Grid.Row="10"/>
+        <TextBox Name="txtSupplier" Margin="10" Grid.Row="11"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="12" Margin="10">
+            <Button Content="Сохранить" Width="100" Margin="5" Click="btnSave_Click"/>
+            <Button Content="Отмена" Width="100" Margin="5" Click="btnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

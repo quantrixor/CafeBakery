@@ -72,23 +72,27 @@
     </ApplicationDefinition>
     <Compile Include="Model\DatabaseConfig.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Inventory.cs" />
     <Compile Include="Model\Menu.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\Position.cs" />
+    <Compile Include="Views\Pages\InventoryListPage.xaml.cs">
+      <DependentUpon>InventoryListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\EmployeesListPage.xaml.cs">
       <DependentUpon>EmployeesListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\ManageInventoryPage.xaml.cs">
-      <DependentUpon>ManageInventoryPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Pages\MenuListPage.xaml.cs">
       <DependentUpon>MenuListPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\OrdersListPage.xaml.cs">
       <DependentUpon>OrdersListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\InventoryManagementWindow.xaml.cs">
+      <DependentUpon>InventoryManagementWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\ManageEmployeesWindow.xaml.cs">
       <DependentUpon>ManageEmployeesWindow.xaml</DependentUpon>
@@ -111,15 +115,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\Pages\InventoryListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\EmployeesListPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Pages\ManageInventoryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,6 +134,10 @@
     <Page Include="Views\Pages\OrdersListPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Windows\InventoryManagementWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\ManageEmployeesWindow.xaml">
       <SubType>Designer</SubType>
