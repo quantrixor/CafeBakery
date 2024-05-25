@@ -52,7 +52,7 @@ namespace CafeBakery.Views.Pages
 
         private void listViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Here you could handle the selection changed event if needed
+
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -72,7 +72,7 @@ namespace CafeBakery.Views.Pages
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
-                LoadMenuItems(); // Reload the menu items to refresh the list
+                LoadMenuItems();
             }
         }
 
@@ -96,7 +96,7 @@ namespace CafeBakery.Views.Pages
                         connection.Open();
                         command.ExecuteNonQuery();
                     }
-                    LoadMenuItems(); // Reload the menu items to refresh the list
+                    LoadMenuItems();
                 }
             }
         }
@@ -112,7 +112,7 @@ namespace CafeBakery.Views.Pages
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
-                LoadMenuItems(); // Reload the menu items to refresh the list
+                LoadMenuItems();
             }
         }
 

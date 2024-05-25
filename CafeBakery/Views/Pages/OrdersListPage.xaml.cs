@@ -57,7 +57,7 @@ namespace CafeBakery.Views.Pages
 
         private void listViewOrders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Optional: Handle selection changed logic if needed
+
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)

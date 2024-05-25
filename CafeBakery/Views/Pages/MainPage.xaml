@@ -14,6 +14,7 @@
             <Button Content="Меню" Margin="0,5" Click="Menu_Click"/>
             <Button Content="Заказы" Click="Orders_Click"/>
             <Button Content="Инвентарь" Margin="0,5" Click="Inventory_Click"/>
+            <Button Content="Должности" Click="Position_Click"/>
         </StackPanel>
     </Grid>
 </Page>

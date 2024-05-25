@@ -55,7 +55,7 @@ namespace CafeBakery.Views.Pages
 
         private void listViewInventory_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Here you could handle the selection changed event if needed
+
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -78,7 +78,7 @@ namespace CafeBakery.Views.Pages
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
-                LoadInventoryItems(); // Reload the inventory items to refresh the list
+                LoadInventoryItems();
             }
         }
 
@@ -105,7 +105,7 @@ namespace CafeBakery.Views.Pages
                         connection.Open();
                         command.ExecuteNonQuery();
                     }
-                    LoadInventoryItems(); // Reload the inventory items to refresh the list
+                    LoadInventoryItems();
                 }
             }
         }

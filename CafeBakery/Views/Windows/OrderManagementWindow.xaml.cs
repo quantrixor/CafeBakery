@@ -78,7 +78,7 @@ namespace CafeBakery.Views.Windows
             Order.CompletionStatus = (cmbCompletionStatus.SelectedItem as ComboBoxItem)?.Content.ToString();
             Order.EmployeeId = (int)(cmbEmployee.SelectedValue ?? 0);
 
-            DialogResult = true; // Ensure the dialog is closed and returns true
+            DialogResult = true;
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
